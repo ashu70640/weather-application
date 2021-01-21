@@ -1,0 +1,92 @@
+body{
+    color: #333333;
+    font-family:Arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+     
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+.height{
+    height: 187.6vh;
+}
+.main-content{
+    flex-grow: 1;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    margin:0 auto;
+    border:5px solid gray ;
+    display: flex ;
+    flex-direction: column;
+    box-shadow: 2px 5px 10px gray;
+    color: whitesmoke;
+    border-radius: 10px;
+    
+
+    
+
+    
+}
+.img{
+    background-image: url('/img/pexels.jpg');
+    background-size: cover;
+}
+.icon-img{
+    flex: 1;
+    text-align: center;
+    
+}
+.head-content{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.head{
+    flex: 1;
+}
+footer{
+    color: whitesmoke;
+    border-top: 1px solid gray;
+    padding:16px 0;
+    height: 15px;
+}
+header{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1{
+    font-size: 64px;
+    margin-bottom: 10px 0px 10px 0px;
+    color: whitesmoke;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.portrait{
+    width: 250px;
+}
+input{
+   border:1px solid #cccccc;
+   padding: 8px; 
+   width: 200px;
+}
+button{
+   cursor: pointer;
+   border: 1px solid #888888;
+   background: #888888;
+   padding:8px;
+   color: #ffffff;
+}
