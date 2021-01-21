@@ -12,7 +12,7 @@ weatherForm.addEventListener('submit',(e)=>{
     const location=search.value
     messageOne.textContent='Loading...'
     
-    fetch('http://localhost:3000/weather?address=' + location).then((response)=>{
+    fetch('/weather?address=' + location).then((response)=>{
         response.json().then((data)=>{
             const forecast="It is currently "+ data.forecast.temperature +" degree out and "+ data.forecast.description +" in "+ data.forecast.name +" with humidity "+ data.forecast.humidity+" and wind speed is "+data.forecast.wind_speed.speed+" km/hr at "+data.forecast.wind_speed.deg+" degree"; 
             if(data.error){
